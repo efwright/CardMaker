@@ -48,6 +48,9 @@
 
 use "Example1.template";
 
+# Declare size of card (width height) in pixels
+size 1000 1000;
+
 Paragraph p1 = Paragraph(TEXT="Hello");
 
 Paragraph p2 = Paragraph(TEXT="Hello", FONT="font");
