@@ -204,6 +204,8 @@ def process_textbox(card, ast, tb):
 def make_card(ast, sym):
     global symbols
     symbols = sym
+    if ast.card_size[0] <= 0 or ast.card_size[1] <= 0:
+       return Image.new('RGBA', (1,1))
 
     if ast.card_fill[0] < 0:
         card = Image.new('RGBA', ast.card_size)

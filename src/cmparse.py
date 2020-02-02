@@ -70,7 +70,7 @@ class AST:
     def __init__(self):
         self.card_name = ''
         self.card_size = (0, 0)
-        self.card_file = (-1, -1, -1)
+        self.card_fill = (-1, -1, -1)
         self.symtable = OrderedDict()
     def set_name(self, name):
         self.card_name = name

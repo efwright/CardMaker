@@ -29,7 +29,7 @@ tokens = [
 literals = '+=()[],;.'
 
 def t_STRING(t):
-    r'"[a-zA-Z/][a-zA-Z_0-9./\-$() ]*"'
+    r'"[a-zA-Z/.][a-zA-Z_0-9./\-$() ]*"'
     t.type = reserved.get(t.value, 'STRING')
     if t.type == 'STRING':
         t.value = t.value[1:len(t.value)-1]
