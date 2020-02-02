@@ -1,0 +1,18 @@
+use "Template.card";
+
+card_name("TestCard");
+
+name = "Test $(tap) Card";
+art = read_image("Kitten.jpg");
+art = crop_image("Kitten.jpg", 10, 10, 10, 10);
+art = scale_image("Kitten.jpg", 100, 100);
+
+tb.text = [name, name];
+tb.box = (25, 50, 50, 50);
+tb.font = "open-sans/OpenSans-Regular.ttf";
+tb.fontsize = 10;
+
+ib.image = art;
+ib.box = (0, 0, 100, 100);
+ib.opacity = 100;
+
